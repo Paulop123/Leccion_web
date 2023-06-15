@@ -1,0 +1,104 @@
+
+
+/*Selector de la barra de la cabecera*/
+.cabecera{
+
+    background-color: rgba(26, 186, 218, 0.839);
+    border-bottom: solid 2px;
+    min-width: 850px;
+    
+  }
+
+  /*Logo de la clinica*/
+  .icono{
+
+    color: white;
+  }
+
+  /*Titulo del banner*/
+  .banner{
+
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2%;
+  }
+
+  .banner p{
+
+    margin-bottom: 15%;
+    font-size: 1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+/*Espacio entre span y boton*/
+  .espacio{
+
+
+    flex: 1 1 auto;
+  }
+
+  /*Icono de inicio de sesion*/
+  
+  .icono_inicio_sesion{
+
+    color: black;
+    border: px solid white;
+    background-color: lightgray;
+  }
+
+  /*Selector de componente, cambia fondo icono inicio sesion*/
+  .icono_inicio_sesion:hover{
+
+    background-color: orange;
+  }
+
+
+  /*Enlaces del banner*/
+
+  .banner2 a{
+
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nombre_usuario{
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .nombre-usuario-container {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 10px; /* Espacio entre el nombre y el botón */
+  }
+
+  .nombre_usuario {
+    margin-right: 10px; /* Agregar un margen izquierdo para separar el nombre de usuario */
+  }
+
+  .boton_cerrar_sesion {
+    background-color: rgb(248, 64, 64);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Estilo de fuente */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    
+
+  }
+  
+  .boton_cerrar_sesion:hover {
+    background-color: orange;
+  }

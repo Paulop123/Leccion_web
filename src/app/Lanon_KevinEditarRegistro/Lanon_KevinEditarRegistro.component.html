@@ -1,0 +1,38 @@
+<mat-card>
+
+  <form>
+    <div class="registro_modificar">
+      <mat-card-title>Modificar Usuario</mat-card-title>
+    </div>
+  
+    <!-- Campos del formulario -->
+  
+
+    <mat-form-field class="campos-field">
+      
+      <input type="text" [(ngModel)]="nuevaCedula" name="cedula">
+    </mat-form-field>
+
+    <mat-form-field class="campos-field">
+      
+      <input type="text" [(ngModel)]="nuevoNombre" name="nombre">
+    </mat-form-field>
+  
+    <mat-form-field class="campos-field">
+  
+      <input type="text" [(ngModel)]="nuevaApellido" name="apellido">
+    </mat-form-field>
+  
+    <mat-form-field class="campos-field">
+  
+      <input type="text" [(ngModel)]="nuevaCiudad" name="ciudad">
+    </mat-form-field>
+  
+  
+    <!-- Botones de guardar y cancelar -->
+    <button mat-raised-button color="primary" (click)="guardarCambios()">Guardar cambios</button>
+    <button mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+  </form>
+
+</mat-card>
+

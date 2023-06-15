@@ -1,0 +1,37 @@
+
+<!--Cabecera de la pagina-->
+<mat-toolbar class="cabecera" >
+
+  <mat-icon class="icono" fontIcon="android"></mat-icon>
+
+  <span class="banner">Desarrollo <p>Web <s class="a"></s></p></span>
+
+<!--Enlaces del banner-->
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="">Inicio</a> </span>
+
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="">Registros</a> </span>
+
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="">Contactos</a> </span>
+
+  <div class="espacio"></div>
+
+  <div *ngIf="1 !== sharedService.getTemp()">
+    <button mat-icon-button class="icono_inicio_sesion" (click)="inicioSesion()">
+      <mat-icon>account_box</mat-icon>
+    </button>
+  </div>
+
+  <div *ngIf="1 === sharedService.getTemp()">
+    <div class="nombre-usuario-container">
+    <span class="nombre_usuario">Bienvenido <br> Usuario</span>
+    <div class="espacio"></div>
+    <button mat-button class="boton_cerrar_sesion" (click)="cerrarSesion()">
+      Cerrar sesion
+    </button>
+  </div>
+  </div>
+  
+</mat-toolbar>
